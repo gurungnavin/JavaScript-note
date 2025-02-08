@@ -1,3 +1,9 @@
+// Declaring Variable Names
+let firsName = "John";       // Valid
+const _value = 23;   // Valid
+var $price = 2300; // Valid
+let isActive;     // Valid
+
 //======================== var examples ========================
     {
         var city = "Tokyo";
