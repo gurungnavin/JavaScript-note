@@ -165,3 +165,10 @@ JavaScript has `primitive` and `non-primitive` (or reference) data types.
         - Example: 1234567890n
 
 
+#### 1. non-primitive Data Types (Reference)
+- Non-primitive data types store references to the data and can be modified. They include objects, arrays, and functions.
+
+    - `Object:` An object is a collection of key-value pairs used to store data.
+        ```javascript
+            let person = { name: "John", age: 30 };
+        ```
