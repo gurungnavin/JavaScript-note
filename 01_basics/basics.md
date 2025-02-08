@@ -1,8 +1,8 @@
 ## 1. Variables
 JavaScript variables are used to store data values. You can declare variables using three keywords:
-### 1. var (Old way, not recommended)
-### 2. let (Recommended for variables that can change)
-### 3. const (Recommended for variables that should not change)
+ - var (Old way, not recommended)
+ - let (Recommended for variables that can change)
+ - const (Recommended for variables that should not change)
 
 #### a. `var`(Global/Function Scope, Avoid Using)
 ```javascript
