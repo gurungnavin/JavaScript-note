@@ -1,5 +1,6 @@
 ## 目次 (Table of Contents)
 - [Variables](#1-variables)
+- [Datatypes and ECMA standards](#Datatypes-and-ECMA-standards)
 
 ## 1. Variables
 JavaScript variables are used to store data values. You can declare variables using three keywords:
