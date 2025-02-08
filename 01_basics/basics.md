@@ -1,6 +1,6 @@
 ## 目次 (Table of Contents)
 - [Variables](#1-variables)
-- [Datatypes and ECMA standards](#Datatypes-and-ECMA-standards)
+- [Datatypes](#2-data-types)
 
 ## 1. Variables
 JavaScript variables are used to store data values. You can declare variables using three keywords:
@@ -152,7 +152,7 @@ JavaScript has `primitive` and `non-primitive` (or reference) data types.
     - `Boolean`: Represents a logical value, either true or false.
     Example: true, false
 
-    `Undefined`: A variable declared but not assigned a value.
+    - `Undefined`: A variable declared but not assigned a value.
     Example: let x;
 
     - `Null`: Represents an empty or non-existent value.
