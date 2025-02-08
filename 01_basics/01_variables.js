@@ -56,3 +56,14 @@ let isActive;     // Valid
         console.log("fruit: " + fruit); // ✅ apple
         //console.log(name);  // ❌ ERROR: name is not defined
     }
+
+
+    // =========== Practices ==============
+
+    const myAccountNo = 12345;
+    let my_bank = "World Bank";
+    let _bankBalance = "2300"
+    let $location
+
+    console.table([myAccountNo, my_bank, _bankBalance, $location]);
+    
