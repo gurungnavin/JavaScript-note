@@ -75,3 +75,55 @@ console.log(city); // Output: Tokyo (Still accessible outside)
 #### c. `const` (Block Scope, Can not Change)
 `const` is block-scoped and once assigned a value, it cannot be reassigned or changed.
 
+```javascript
+    // Outer Block
+    const fruit = "apple";
+
+    // Attempting to reassign a `const` variable (will throw an error in JavaScript)
+    const fruit = "banana"; // ❌ ERROR: cannot reassign
+    fruit = "orange"; // ❌ ERROR: cannot reassign
+
+    // Inner Block 1
+    {
+        console.log(fruit); // ✅ apple
+        let name = "Yamada";
+        console.log(name);  // ✅ Yamada
+    }
+
+    // Outside Inner Block 1
+    console.log(fruit); // ✅ apple
+    console.log(name);  // ❌ ERROR: name is not defined
+
+    // Inner Block 2
+    {
+        console.log(fruit); // ✅ apple
+        console.log(name);  // ❌ ERROR: name is not defined
+    }
+
+```
+
+
+```pgsql
+┌────────────── Outer Block ────────-------──---────┐
+│ const fruit = "apple";                            |
+│                                                   │
+| const fruit = "banana" ❌ ERROR: can not reassign │
+│  fruit = "orange" ❌ ERROR: can not reassign      │
+│                                                   │
+│ ┌────────── Inner Block 1 ──────────┐             │
+│ │ console.log(fruit);  ✅ apple     │             │
+│ │ let name = "Yamada";              │             │
+│ │ console.log(name);  ✅ Yamada     │             │
+│ └───────────────────────────────────┘             │
+│                                                   │
+│   console.log(fruit);  ✅ apple                   │
+│   console.log(name);  ❌ ERROR: not defined       │
+│                                                   │
+│ ┌────────── Inner Block 2 ──────────┐             │
+│ │ console.log(fruit);  ✅ apple     │             │
+│ │ console.log(name);  ❌ ERROR      │             │
+│ └───────────────────────────────────┘             │
+└───────────────────────────────────────---------──-┘
+
+
+```
