@@ -147,21 +147,21 @@ JavaScript has `primitive` and `non-primitive` (or reference) data types.
         - Example: "Hello"
 
     - `Number`: Represents numeric values (integers and floats).
-    Example: 10, 3.14
+        - Example: 10, 3.14
     
     - `Boolean`: Represents a logical value, either true or false.
-    Example: true, false
+        - Example: true, false
 
     - `Undefined`: A variable declared but not assigned a value.
-    Example: let x;
+        - Example: let x;
 
     - `Null`: Represents an empty or non-existent value.
-    Example: let y = null;
+        - Example: let y = null;
 
     - `Symbol` (ES6): A unique and immutable value, often used for unique object keys.
-    Example: const sym = Symbol();
+        - Example: const sym = Symbol();
     
     - `BigInt` (ES11): Represents large integers beyond the safe integer range.
-    Example: 1234567890n
+        - Example: 1234567890n
 
 
