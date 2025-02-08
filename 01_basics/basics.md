@@ -144,7 +144,7 @@ JavaScript has `primitive` and `non-primitive` (or reference) data types.
 - These are basic types that hold single values and cannot be changed.
 
     - `String:` Represents text.
-    Example: "Hello"
+        - Example: "Hello"
 
     - `Number`: Represents numeric values (integers and floats).
     Example: 10, 3.14
