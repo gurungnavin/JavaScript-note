@@ -35,27 +35,43 @@ console.log(city); // Output: Tokyo (Still accessible outside)
 `block scope` refers to the code within curly brackets `{}`.
 
 ```javascript
-    {
-        let name = "Yamada";
-        console.log(name); // ✅ Output: Tokyo
-    }
-        console.log(name); // ❌ Error: city is not available here
+    let game = "football";
 
     {
-        console.log(name); // ❌ Error: city is not available here
+        console.log(game); // ✅ Accessible (Output: football)
+        let name = "Yamada";
+        console.log(name); // ✅ Accessible (Output: Yamada)
+    }
+
+    console.log(game); // ✅ Accessible (Output: football)
+    console.log(name); // ❌ ERROR: name is not defined
+
+    {
+        console.log(game); // ✅ Accessible (Output: football)
+        console.log(name); // ❌ ERROR: name is not defined
     }
 ```
 ```pgsql
-┌───────────── Block 1 ─────────────┐
-│ let name = "Yamada";               │ ✅ city exists here
-│ console.log(name); // Output: Tokyo │
-└───────────────────────────────────┘
-                                      ❌ city is gone after the block
-// console.log(name); // Error (not defined)
+┌────────────── Outer Block ──────────-────┐
+│ let game = "football";                   │
+│                                          │
+│ ┌────────── Inner Block 1 ──────────┐    │
+│ │ console.log(game);  ✅ football   │    │
+│ │ let name = "Yamada";              │    │
+│ │ console.log(name);  ✅ Yamada     │    │
+│ └───────────────────────────────────┘    │
+│                                          │
+│ console.log(game);  ✅ football          │
+│ console.log(name);  ❌ ERROR: not defined│
+│                                          │
+│ ┌────────── Inner Block 2 ──────────┐    │
+│ │ console.log(game);  ✅ football   │    │
+│ │ console.log(name);  ❌ ERROR      │    │
+│ └───────────────────────────────────┘    │
+└─────────────────────────────────────────-┘
 
-┌───────────── Block 2 ─────────────┐
-│ // console.log(name); // Error    │ ❌ city is not accessible here
-└───────────────────────────────────┘
 
 ```
-#### c. `const` (Block Scope, Can Change)
+#### c. `const` (Block Scope, Can not Change)
+`const` is block-scoped and once assigned a value, it cannot be reassigned or changed.
+

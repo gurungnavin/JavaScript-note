@@ -20,3 +20,4 @@
     {
       //  console.log(name); // ❌ Error: city is not available here
     }   
+//
