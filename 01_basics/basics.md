@@ -1,3 +1,6 @@
+## 目次 (Table of Contents)
+- [Variables](#Variables)
+
 ## 1. Variables
 JavaScript variables are used to store data values. You can declare variables using three keywords:
  - var (Old way, not recommended)

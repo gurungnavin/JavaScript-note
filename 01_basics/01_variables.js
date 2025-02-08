@@ -1,19 +1,19 @@
 //======================== var examples ========================
     {
         var city = "Tokyo";
-        console.log(city); // ✅ Output: Tokyo
+        console.log("city:" + city); // ✅ Output: Tokyo
     }
-        console.log(city); // ✅ Output: Tokyo (Still accessible outside)
+        console.log("city:" + city); // ✅ Output: Tokyo (Still accessible outside)
 
     {
-        console.log(city); // ✅ Output: Tokyo (Still accessible outside)
+        console.log("city:" + city); // ✅ Output: Tokyo (Still accessible outside)
     }
 
 //======================== let examples ========================
 
     {
         let name = "Yamada";
-        console.log(name); // ✅ Output: Tokyo
+        console.log("name :" + name); // ✅ Output: Tokyo
     }
       //  console.log(name); // ❌ Error: city is not available here
 
@@ -36,17 +36,17 @@
 
     // Inner Block 1
     {
-        console.log(fruit); // ✅ apple
+        console.log("fruit: " + fruit); // ✅ apple
         let name = "Yamada";
-        console.log(name);  // ✅ Yamada
+        console.log("name: " + name);  // ✅ Yamada
     }
 
     // Outside Inner Block 1
-    console.log(fruit); // ✅ apple
+    console.log("fruit: " + fruit); // ✅ apple
    //console.log(name);  // ❌ ERROR: name is not defined
 
     // Inner Block 2
     {
-        console.log(fruit); // ✅ apple
+        console.log("fruit: " + fruit); // ✅ apple
         //console.log(name);  // ❌ ERROR: name is not defined
     }
