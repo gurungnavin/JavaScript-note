@@ -124,6 +124,4 @@ console.log(city); // Output: Tokyo (Still accessible outside)
 │ │ console.log(name);  ❌ ERROR      │             │
 │ └───────────────────────────────────┘             │
 └───────────────────────────────────────---------──-┘
-
-
 ```
