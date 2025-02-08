@@ -7,6 +7,13 @@ JavaScript variables are used to store data values. You can declare variables us
  - let (Recommended for variables that can change)
  - const (Recommended for variables that should not change)
 
+### Declaring Variable Names
+
+- Must start with a letter, `_`, or `$` (e.g., `let name`, `const _value`, `var $price`).
+- Can include letters, numbers, `_`, and `$` (e.g., `let user1`, `const value_2`).
+- Cannot use JavaScript reserved keywords (e.g., `let class` is invalid).
+- **Case-sensitive**: `name` and `Name` are different.
+
 #### a. `var`(Global/Function Scope, Avoid Using)
 ```javascript
     {
