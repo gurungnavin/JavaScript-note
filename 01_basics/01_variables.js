@@ -1,18 +1,69 @@
-const myName = "Navin"
-const my_Name = "Tanaka"
-const myname = "Yamada"
+// Declaring Variable Names
+let firsName = "John";       // Valid
+const _value = 23;   // Valid
+var $price = 2300; // Valid
+let isActive;     // Valid
 
-const email = "@gmail.com"
+//======================== var examples ========================
+    {
+        var city = "Tokyo";
+        console.log("city:" + city); // ✅ Output: Tokyo
+    }
+        console.log("city:" + city); // ✅ Output: Tokyo (Still accessible outside)
+
+    {
+        console.log("city:" + city); // ✅ Output: Tokyo (Still accessible outside)
+    }
+
+//======================== let examples ========================
+
+    {
+        let name = "Yamada";
+        console.log("name :" + name); // ✅ Output: Tokyo
+    }
+      //  console.log(name); // ❌ Error: city is not available here
+
+    {
+      //  console.log(name); // ❌ Error: city is not available here
+    }   
+
+    
+// ======================== const example ========================================
 
 
-let age = 12;
-age = 23;
-let number = 10;
+    // Outer Block
+    const fruit = "apple";
+
+    // Attempting to reassign a `const` variable (will throw an error in JavaScript)
+    
+    //const fruit = "banana"; // ❌ ERROR: cannot reassign
+    
+    //fruit = "orange"; // ❌ ERROR: cannot reassign
+
+    // Inner Block 1
+    {
+        console.log("fruit: " + fruit); // ✅ apple
+        let name = "Yamada";
+        console.log("name: " + name);  // ✅ Yamada
+    }
+
+    // Outside Inner Block 1
+    console.log("fruit: " + fruit); // ✅ apple
+   //console.log(name);  // ❌ ERROR: name is not defined
+
+    // Inner Block 2
+    {
+        console.log("fruit: " + fruit); // ✅ apple
+        //console.log(name);  // ❌ ERROR: name is not defined
+    }
 
 
-let my_age = "12"
-my_age = "22"
-let myNumber = "10"
+    // =========== Practices ==============
 
-console.table([my_age,myName, my_Name, myname, age, number]);
+    const myAccountNo = 12345;
+    let my_bank = "World Bank";
+    let _bankBalance = "2300"
+    let $location
 
+    console.table([myAccountNo, my_bank, _bankBalance, $location]);
+    
