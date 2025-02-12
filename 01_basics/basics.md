@@ -172,3 +172,5 @@ JavaScript has `primitive` and `non-primitive` (or reference) data types.
         ```javascript
             let person = { name: "John", age: 30 };
         ```
+
+        
