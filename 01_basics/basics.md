@@ -176,7 +176,7 @@ JavaScript has `primitive` and `non-primitive` (or reference) data types.
 ## 3. Conversion Operators
 
 ### JavaScript Type Conversion
-    ```bash
+    ```javascript
             Converting Strings to Numbers
             Converting Numbers to Strings
             Converting Dates to Numbers
