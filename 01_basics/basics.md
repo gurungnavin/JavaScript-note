@@ -1,6 +1,7 @@
 ## 目次 (Table of Contents)
 - [Variables](#1-variables)
 - [Datatypes](#2-data-types)
+- [Conversion Operators](#3-conversion-operators)
 
 ## 1. Variables
 JavaScript variables are used to store data values. You can declare variables using three keywords:
@@ -177,9 +178,60 @@ JavaScript has `primitive` and `non-primitive` (or reference) data types.
 
 ### JavaScript Type Conversion
 
- - Converting `Strings` to `Numbers`
- - Converting `Numbers` to `Strings`
- - Converting `Dates` to `Numbers`
- - Converting `Numbers` to `Dates`
+ 1. `String` to `Number` Conversion:
+
+ ```javascript
+    let score = "navin"
+    let valueInNumber = Number(score);
+    // console.log(typeof valueInNumber); // "number"
+    // console.log(valueInNumber); // NaN (Not a Number)
+ ```
+ - The string "navin" can't be converted to a number, so Number() returns `NaN` (Not a Number).
+ - `NaN` is a special value of the number type in JavaScript that represents an invalid or undefined number result from operations like failed type conversions or mathematical errors.
+
+ 2. `Boolean` Conversion:
+
+```javascript
+    let isLoggedIn = "navin"
+    let booleanIsLoggedIn = Boolean(isLoggedIn);
+    // console.log(booleanIsLoggedIn); // true
+```
+### Falsy and Truthy Values in JavaScript
+
+| **Value**              | **Type**         | **Result when converted to Boolean** | **Example**                            |
+|------------------------|------------------|--------------------------------------|----------------------------------------|
+| **Falsy Values**        |                  |                                      |                                        |
+| `false`                | Boolean          | `false`                              | `Boolean(false)` → `false`             |
+| `0`                    | Number           | `false`                              | `Boolean(0)` → `false`                |
+| `-0`                   | Number           | `false`                              | `Boolean(-0)` → `false`               |
+| `""` (empty string)    | String           | `false`                              | `Boolean("")` → `false`               |
+| `null`                 | Object (null)    | `false`                              | `Boolean(null)` → `false`             |
+| `undefined`            | Undefined        | `false`                              | `Boolean(undefined)` → `false`        |
+| `NaN`                  | Number           | `false`                              | `Boolean(NaN)` → `false`              |
+| **Truthy Values**       |                  |                                      |                                        |
+| `"hello"`              | String           | `true`                               | `Boolean("hello")` → `true`           |
+| `1`                    | Number           | `true`                               | `Boolean(1)` → `true`                 |
+| `-1`                   | Number           | `true`                               | `Boolean(-1)` → `true`                |
+| `Infinity`             | Number           | `true`                               | `Boolean(Infinity)` → `true`          |
+| `true`                 | Boolean          | `true`                               | `Boolean(true)` → `true`              |
+| `{}`                   | Object           | `true`                               | `Boolean({})` → `true`                |
+| `[]`                   | Object (array)   | `true`                               | `Boolean([])` → `true`                |
+
+
+3. `Number` to `String` Conversion`
+ ```javascript
+    let someNumber = 33;
+    let stringNumber = String(someNumber);
+    // console.log(stringNumber); // "33"
+    // console.log(typeof stringNumber); // "string"
+ ```
+ - The `number` 33 is converted to a string "33".
+
+
+4. `Dates` to `Numbers` Conversion`
+
+
+
+
  - Converting `Booleans` to `Numbers`
  - Converting `Numbers` to `Booleans`
