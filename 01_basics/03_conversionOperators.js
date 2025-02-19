@@ -17,7 +17,7 @@ let stringIntoBoolean = Boolean(isActive)
 
 // Number to String Conversion
 
-let nsNumber = 234
+let nsNumber = 1234
 let numberIntoString = String(nsNumber)
 // console.log(typeof numberIntoString);
 // console.log(numberIntoString);
@@ -45,4 +45,3 @@ let numberIntoString = String(nsNumber)
 
 // let test_Boolean_to_String = false.toString();
 // console.log(typeof test_Boolean_to_String);
-
