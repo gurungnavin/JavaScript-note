@@ -10,7 +10,7 @@ let myName1 = "Yamada";
 // console.log(myName1)
 let myName2 = myName1;
 myName2 = "Tanaka";
-// console.log(myName2);
+// console.log(myName2)
 
 
 
