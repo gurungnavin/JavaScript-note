@@ -97,3 +97,19 @@ const myarr1 = new Array(1, 2, 3, 4, 5);
 // const spliceArr = [1, 2, 3, 4, 5];
 // console.log(spliceArr.splice(1, 3));  // Output: [2, 3, 4] (Removes 3 elements starting from index 1)
 // console.log(spliceArr);  // Output: [1, 5] (Original array is modified)
+
+
+
+
+
+// Summary
+// 1. Arrays can be created using `[]` or `new Array()`.
+// 2. `push` - Adds a value to the end of the array.
+// 3. `pop` - Removes the last value from the array.
+// 4. `unshift` - Adds a value to the beginning of the array.
+// 5. `shift` - Removes the first value from the array.
+// 6. `includes` - Checks if a value exists in the array (returns true/false).
+// 7. `indexOf` - Finds the index of a value in the array.
+// 8. `join` - Combines all elements of an array into a string with an optional separator.
+// 9. `slice` - Returns a portion of the array without modifying the original array.
+// 10. `splice` - Removes or replaces elements in the array and modifies the original array.
